@@ -1,0 +1,18 @@
+\documentclass[10pt]{article} % Can also use 9pt or 11pt for a smaller or larger overall font size
+\usepackage[dvipsnames]{xcolor}
+\usepackage{clock}
+\usepackage[clock]{ifsym}
+\usepackage{calendar} % Use the calendar.sty style
+\usepackage{graphicx}
+\usepackage{marvosym}
+\usepackage[a3paper, margin=1cm]{geometry} % Page dimensions and margins
+
+\usepackage{palatino} % Use the Palatino font
+
+\begin{document}
+
+\pagestyle{empty} % Disable default headers and footers
+
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+\StartingDayNumber=1 % The starting day of the calendar, default of 1 means Sunday, 2 for Monday, etc
