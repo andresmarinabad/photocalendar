@@ -1,3 +1,4 @@
+
 .env/
 scr/.env
 
@@ -6,3 +7,4 @@ scr/.env
 .log
 
 __pycache__/
+
