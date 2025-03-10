@@ -1,0 +1,8 @@
+.env/
+scr/.env
+
+.aux
+.pdf
+.log
+
+__pycache__/
