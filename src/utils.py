@@ -1,7 +1,10 @@
 import datetime
 import dateutil.easter
 import ephem
+import os
+import glob
 import calendar
+import subprocess
 from config import config
 
 # Diccionario de nombres de los meses en castellano
@@ -134,6 +137,17 @@ def ciclo_liturgico(anio):
         return "A"
     else:
         return "B"
+
+
+def compile_pdf():
+    subprocess.run(f"cd ../build/ && pdflatex calendar.tex && xdg-open calendar.pdf", shell=True, check=True)
+    return True
+
+def get_month_image(mes):
+    imagen = glob.glob(os.path.join('../images', f"{mes}.*"))
+    if len(imagen) > 0:
+        return imagen[0]
+    return 'example-image'
     
 
 def create_calendar_tex(days):
@@ -148,7 +162,8 @@ def create_calendar_tex(days):
             c.write("\n")
             c.write("\\begin{figure*}[t!]\n")
             c.write("\\begin{center}\n")
-            c.write("\\includegraphics[width=\\linewidth]{example-image}\n")
+            image = get_month_image(MESES[mes])
+            c.write("\\includegraphics[width=\\linewidth]{"+image+"}\n")
             c.write("\\end{center}\n")
             c.write("\\end{figure*}\n")
             c.write("\\begin{center}\n")

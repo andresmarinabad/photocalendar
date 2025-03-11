@@ -1,8 +1,8 @@
+import os
 import streamlit as st
 import pandas as pd
-import subprocess
 from data import load_csv_data, load_all_days
-from utils import create_calendar_tex
+from utils import create_calendar_tex, compile_pdf
 from database import (get_tables,
                       load_data,
                       delete_records,
@@ -88,12 +88,13 @@ if not df.empty:
         st.success("✅ Datos actualizados correctamente.")
         st.rerun()
 
-    export = st.button("Exportar a LaTex", type="primary")
+    export = st.button("Crear Calendario", type="primary")
 
     if export:
-        days = load_all_days(df)
-        create_calendar_tex(days)
-        st.success("Se han exportado los datos a la plantilla LaTeX en el directorio build")
+        with st.spinner("Exportando a pdf...", show_time=True):
+            days = load_all_days(df)
+            create_calendar_tex(days)
+            compilado = compile_pdf()
         
 
 # === FORMULARIO PARA AGREGAR NUEVOS REGISTROS ===

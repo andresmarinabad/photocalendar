@@ -1,9 +1,9 @@
 .env/
 scr/.env
 
-.aux
-.pdf
-.log
+build/*.aux
+build/*.pdf
+build/*.log
 
 __pycache__/
 
