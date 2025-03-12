@@ -35,6 +35,16 @@ def get_tables(pd):
     return tables
 
 
+def get_all_from_table(table, pd):
+    conn = get_connection()
+    info = pd.read_sql(
+        f"SELECT dia, titulo, opciones, mes FROM {table} ORDER BY mes",
+        conn
+    )
+    conn.close()
+    return info
+
+
 def load_data(table_name, pd):
     """Carga los datos de una tabla específica."""
     conn = get_connection()

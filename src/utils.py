@@ -30,6 +30,7 @@ def calcular_eventos_calendario():
 
     # Pascua y días relacionados
     pascua = dateutil.easter.easter(año)
+    ramos = pascua - datetime.timedelta(days=7)
     jueves_santo = pascua - datetime.timedelta(days=3)
     viernes_santo = pascua - datetime.timedelta(days=2)
     miércoles_ceniza = pascua - datetime.timedelta(days=46)  # 46 días antes de Pascua
@@ -65,23 +66,25 @@ def calcular_eventos_calendario():
     trabajo = datetime.date(año, 5, 1)
     verbena = datetime.date(año, 6, 23)
     diada = datetime.date(año, 9, 11)
-    merce = datetime.date(año, 9, 24)  
+    merce = datetime.date(año, 9, 24)
+    pilar = datetime.date(año, 10, 12)
+    asuncion = datetime.date(año, 8, 15)
 
     # Agregar eventos al diccionario
+    obtener_fecha_diccionario(ramos, "{\\color{red} Ramos}", eventos)
     obtener_fecha_diccionario(pascua, "{\\color{red} Pascua}", eventos)
     obtener_fecha_diccionario(jueves_santo, "{\\color{red} Jueves Santo}", eventos)
     obtener_fecha_diccionario(viernes_santo, "{\\color{red} Viernes Santo}", eventos)
     obtener_fecha_diccionario(miércoles_ceniza, "{\\color{Purple} Ceniza}", eventos)
     obtener_fecha_diccionario(pentecostes, "{\\color{red} Pentecostés}", eventos)
-    obtener_fecha_diccionario(ultimo_domingo_marzo, "Horario de verano \\showclock{3}{00}", eventos)
-    obtener_fecha_diccionario(ultimo_domingo_octubre, "Horario de invierno \\showclock{2}{00}", eventos)
+    obtener_fecha_diccionario(ultimo_domingo_marzo, "Horario verano \\showclock{3}{00}", eventos)
+    obtener_fecha_diccionario(ultimo_domingo_octubre, "Horario invierno \\showclock{2}{00}", eventos)
     obtener_fecha_diccionario(verano, "{\\color{Emerald} Verano}", eventos)
     obtener_fecha_diccionario(primavera, "{\\color{Lavender} Primavera}", eventos)
     obtener_fecha_diccionario(otoño, "{\\color{Orange} Otoño}", eventos)
     obtener_fecha_diccionario(invierno, "{\\color{Cyan} Invierno}", eventos)
     ciclo = ciclo_liturgico(config.YEAR+1)
     obtener_fecha_diccionario(primer_domingo_adviento, "{\\color{Plum} Adviento I ("+ciclo+")}", eventos)
-
     obtener_fecha_diccionario(epifania, "{\\color{PineGreen} La Epifanía}", eventos)
     obtener_fecha_diccionario(uno_enero, "{\\color{SkyBlue} Santa María Madre de Dios}", eventos)
     obtener_fecha_diccionario(navidad, "{\\color{red} Navidad}", eventos)
@@ -94,6 +97,8 @@ def calcular_eventos_calendario():
     obtener_fecha_diccionario(verbena, "{\\color{CadetBlue} Verbena de San Juan}", eventos)
     obtener_fecha_diccionario(diada, "Diada de Cataluña", eventos)
     obtener_fecha_diccionario(merce, "{\\color{Peach} La Mercè}", eventos)
+    obtener_fecha_diccionario(pilar, "{\\color{VioletRed} Nuestra Señora del Pilar}", eventos)
+    obtener_fecha_diccionario(asuncion, "{\\color{SkyBlue} La Asunción}", eventos)
 
     return eventos
 
@@ -183,7 +188,7 @@ def create_calendar_tex(days):
                 if counter < 1 or counter > count_days:
                     to_write = "\\BlankDay\n"
                 else:
-                    to_write = "\\day{}{\\vspace{2cm}}\n"
+                    to_write = "\\day{}{\\vspace{1.75cm}}\n"
                 
                 mes_str = MESES[mes]
                 clave = f'{mes_str}{counter}'

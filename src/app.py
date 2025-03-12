@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import pandas as pd
-from data import load_csv_data, load_all_days
+from datos import load_csv_data, load_all_days, export_data_csv
 from utils import create_calendar_tex, compile_pdf
 from database import (get_tables,
                       load_data,
@@ -35,6 +35,7 @@ tablas = get_tables(pd)
 if not tablas:
     if st.button("📂 Cargar CSV de inicio"):
         load_csv_data(pd, st)
+        st.rerun()
 
 
 tabla_seleccionada = st.selectbox("📂 Selecciona una tabla:", tablas)
@@ -88,9 +89,16 @@ if not df.empty:
         st.success("✅ Datos actualizados correctamente.")
         st.rerun()
 
-    export = st.button("Crear Calendario", type="primary")
+    export = st.button("Exportar datos a csv", type="secondary")
+    gen_pdf = st.button("Crear Calendario", type="primary")
 
     if export:
+        exportado = export_data_csv(pd)
+    
+        if exportado:
+            st.toast("Datos exportados a csv")
+
+    if gen_pdf:
         with st.spinner("Exportando a pdf...", show_time=True):
             days = load_all_days(df)
             create_calendar_tex(days)

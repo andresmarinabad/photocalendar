@@ -3,7 +3,9 @@ import glob
 from config import config
 from database import (get_connection,
                       create_table,
-                      table_is_empty)
+                      table_is_empty, 
+                      get_tables,
+                      get_all_from_table)
 from utils import consultar_leyenda, calcular_eventos_calendario
 
 
@@ -47,9 +49,9 @@ def load_all_days(df):
                 fiesta = eventos[mes][dia]
             resultado = grupo[grupo['dia'] == dia]
             clave = f'{mes}{dia}'
+            este_dia = ''
             if not resultado.empty:
                 info_list = resultado[['titulo', 'opciones']].values.flatten().tolist()
-                este_dia = ''
                 for titulo, opciones in zip(info_list[::2], info_list[1::2]):
                     text = consultar_leyenda(titulo, opciones)
                     if este_dia != '':
@@ -57,6 +59,27 @@ def load_all_days(df):
                     else:
                         este_dia = f'{text}'
                  
-                todos_dias[clave] = "\\day{"+fiesta+"}{\\vspace{1.5cm}"+este_dia+"}\n"
-            
+            todos_dias[clave] = "\\day{"+fiesta+"}{\\vspace{1.75cm}"+este_dia+"}\n"
+
     return todos_dias
+
+
+def export_data_csv(pd):
+    try:
+
+        tables = get_tables(pd)
+        output_folder = '../data'
+
+        for table_name in tables:
+            output_file = f"{output_folder}/{table_name}.csv"
+            
+            info = get_all_from_table(table_name, pd)
+            
+            # Exportar a CSV
+            info.to_csv(output_file, index=False)
+        
+        print("Exportación completada con éxito.")
+        return True
+    except Exception as e:
+        print(f"Error al exportar datos: {e}")
+        return False
