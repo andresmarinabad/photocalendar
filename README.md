@@ -4,6 +4,12 @@ PhotoCalendar es una aplicación en Python que permite gestionar un calendario f
 
 ---
 
+![Static Badge](https://img.shields.io/badge/python-v3.12-green)
+![Static Badge](https://img.shields.io/badge/python-streamlit-orange)
+![Static Badge](https://img.shields.io/badge/tex-latex-blue)
+![Static Badge](https://img.shields.io/badge/bash-sh-yellow)
+
+
 ## Características principales
 
 - **Carga de eventos desde un archivo CSV**
