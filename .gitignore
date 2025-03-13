@@ -6,4 +6,5 @@ build/*.pdf
 build/*.log
 
 __pycache__/
+.idea/
 

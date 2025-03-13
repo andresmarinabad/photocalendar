@@ -68,7 +68,8 @@ def export_data_csv(pd):
     try:
 
         tables = get_tables(pd)
-        output_folder = '../data'
+        output_path = os.path.join(config.ROOT, 'data')
+        output_folder = output_path
 
         for table_name in tables:
             output_file = f"{output_folder}/{table_name}.csv"

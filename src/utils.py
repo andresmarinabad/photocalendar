@@ -145,21 +145,25 @@ def ciclo_liturgico(anio):
 
 
 def compile_pdf():
-    subprocess.run(f"cd ../build/ && pdflatex calendar.tex && xdg-open calendar.pdf", shell=True, check=True)
+    build_path = os.path.join(config.ROOT, 'build')
+    subprocess.run(f"cd {build_path} && pdflatex calendar.tex && xdg-open calendar.pdf", shell=True, check=True)
     return True
 
 def get_month_image(mes):
-    imagen = glob.glob(os.path.join('../images', f"{mes}.*"))
+    images_path = os.path.join(config.ROOT, 'images')
+    imagen = glob.glob(os.path.join(images_path, f"{mes}.*"))
     if len(imagen) > 0:
         return imagen[0]
     return 'example-image'
     
 
 def create_calendar_tex(days):
-    with open('../templates/header') as h:
+    header_path = os.path.join(config.ROOT, 'templates', 'header')
+    with open(header_path) as h:
         header = h.read()
-    
-    with open('../build/calendar.tex', 'w', encoding='utf-8') as c:
+
+    build_path = os.path.join(config.ROOT, 'build', 'calendar.tex')
+    with open(build_path, 'w', encoding='utf-8') as c:
         c.write(header)
     
         for mes in range(1, 13):
