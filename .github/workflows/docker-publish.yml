@@ -4,10 +4,10 @@ on:
   push:
     tags:
       - '*.*.*'
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
-  dockerhub:
+  build-push:
     runs-on: ubuntu-latest  # Se ejecuta en un runner de Ubuntu
 
     steps:
@@ -24,24 +24,36 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:${{ github.ref_name }} .
 
+      - name: Docker Tag 'latest'
+        run: |
+          docker tag ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:${{ github.ref_name }} ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:latest
+
       - name: Push Docker image to Docker Hub
         run: |
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:${{ github.ref_name }}
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:latest
 
-  github:
+  release:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Log in to GitHub Container Registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-
-      - name: Build Docker image
-        run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/photocalendar:${{ github.ref_name }} .
-
-      - name: Push Docker image
-        run: |
-          docker push ghcr.io/${{ github.repository_owner }}/photocalendar:${{ github.ref_name }}
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "Release ${{ github.ref_name }}"
+          body: |
+            🚀 **Nueva versión publicada:** `${{ github.ref_name }}`
+            
+            🔹 **Docker Image:**
+            ```
+            docker pull ${{ secrets.DOCKER_USERNAME }}/photocalendar:${{ github.ref_name }}
+            ```
+            🔹 **Última versión estable:**
+            ```
+            docker pull ${{ secrets.DOCKER_USERNAME }}/photocalendar:latest
+            ```
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
