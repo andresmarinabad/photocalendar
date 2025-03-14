@@ -32,28 +32,3 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:${{ github.ref_name }}
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/photocalendar:latest
-
-  release:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ github.ref_name }}
-          name: "Release ${{ github.ref_name }}"
-          body: |
-            🚀 **Nueva versión publicada:** `${{ github.ref_name }}`
-            
-            🔹 **Docker Image:**
-            ```
-            docker pull ${{ secrets.DOCKER_USERNAME }}/photocalendar:${{ github.ref_name }}
-            ```
-            🔹 **Última versión estable:**
-            ```
-            docker pull ${{ secrets.DOCKER_USERNAME }}/photocalendar:latest
-            ```
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
