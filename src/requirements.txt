@@ -1,3 +1,2 @@
-dotenv==0.9.9
 ephem==4.2
 streamlit==1.43.1

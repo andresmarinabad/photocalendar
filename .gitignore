@@ -1,5 +1,4 @@
 .env/
-scr/.env
 
 build/*.aux
 build/*.pdf

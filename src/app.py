@@ -43,9 +43,6 @@ tabla_seleccionada = st.selectbox("📂 Selecciona una tabla:", tablas)
 # === CARGAR Y MOSTRAR DATOS DE LA TABLA ===
 try:
     df = load_data(tabla_seleccionada, pd)
-    if df.empty:
-        st.warning("⚠️ No hay datos cargados.")
-        st.stop()
 except Exception as e:
     df = pd.DataFrame() 
     st.warning("⚠️ Hubo un error al cargar los datos.")
@@ -81,28 +78,32 @@ if not df.empty:
     edited_df.drop(columns=["Eliminar"], inplace=True, errors="ignore")
 
     # === DETECTAR CAMBIOS Y ACTUALIZAR ===
-    if not edited_df.equals(df): 
+    if not edited_df.equals(df):
         for record_id in edited_df.index:
             new_data = edited_df.loc[record_id].to_dict()
             update_record(tabla_seleccionada, record_id, new_data)
-            
+
         st.success("✅ Datos actualizados correctamente.")
         st.rerun()
 
     export = st.button("Exportar datos a csv", type="secondary")
-    gen_pdf = st.button("Crear Calendario", type="primary")
 
     if export:
         exportado = export_data_csv(pd)
-    
+
         if exportado:
             st.toast("Datos exportados a csv")
 
-    if gen_pdf:
-        with st.spinner("Exportando a pdf...", show_time=True):
-            days = load_all_days(df)
-            create_calendar_tex(days)
-            compilado = compile_pdf()
+gen_pdf = st.button("Crear Calendario", type="primary")
+if gen_pdf:
+    with st.spinner("Exportando a pdf...", show_time=True):
+        if df.empty:
+            meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+                             'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+            df = pd.DataFrame(meses, columns=['mes'])
+        days = load_all_days(df)
+        create_calendar_tex(days)
+        compilado = compile_pdf()
         
 
 # === FORMULARIO PARA AGREGAR NUEVOS REGISTROS ===

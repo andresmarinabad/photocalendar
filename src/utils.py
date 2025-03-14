@@ -146,7 +146,7 @@ def ciclo_liturgico(anio):
 
 def compile_pdf():
     build_path = os.path.join(config.ROOT, 'build')
-    subprocess.run(f"cd {build_path} && pdflatex calendar.tex && xdg-open calendar.pdf", shell=True, check=True)
+    subprocess.run(f"cd {build_path} && pdflatex calendar.tex && mv calendar.pdf ../output/calendar.pdf", shell=True, check=True)
     return True
 
 def get_month_image(mes):

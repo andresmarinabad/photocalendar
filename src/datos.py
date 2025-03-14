@@ -7,6 +7,7 @@ from database import (get_connection,
                       get_tables,
                       get_all_from_table)
 from utils import consultar_leyenda, calcular_eventos_calendario
+from utils import MESES
 
 
 def load_csv_data(pd, st):
@@ -20,7 +21,7 @@ def load_csv_data(pd, st):
         return
 
     for file in csv_files:
-        mes = os.path.basename(file).replace(".csv", "")  
+        nombre = os.path.basename(file).replace(".csv", "")
         df = pd.read_csv(file)
 
         # Verificar que el CSV tiene las columnas esperadas
@@ -28,13 +29,13 @@ def load_csv_data(pd, st):
             st.error(f"⚠️ El archivo {file} no tiene las columnas correctas.")
             continue
 
-        create_table(config.TABLE_NAME)
+        create_table(nombre)
 
         # Insertar solo si la tabla está vacía
-        if table_is_empty(config.TABLE_NAME):
+        if table_is_empty(nombre):
             conn = get_connection()
-            df.to_sql(config.TABLE_NAME, conn, if_exists="append", index=False)
-            st.success(f"✅ Datos de {mes} cargados en la base de datos.")
+            df.to_sql(nombre, conn, if_exists="append", index=False)
+            st.success(f"✅ Datos de {nombre} cargados en la base de datos.")
 
     st.rerun()
 
@@ -42,14 +43,20 @@ def load_csv_data(pd, st):
 def load_all_days(df):
     todos_dias = {}
     eventos = calcular_eventos_calendario()
-    for mes, grupo in df.groupby('mes'):
+    for mes in range(1, 13):
+        mes = MESES[mes]
+        grupo = df[df['mes'] == mes]
         for dia in range(1, 32):
             fiesta = ''
-            if mes in eventos and dia in eventos[mes]:
-                fiesta = eventos[mes][dia]
-            resultado = grupo[grupo['dia'] == dia]
             clave = f'{mes}{dia}'
             este_dia = ''
+            if mes in eventos and dia in eventos[mes]:
+                fiesta = eventos[mes][dia]
+            try:
+                resultado = grupo[grupo['dia'] == dia]
+            except KeyError:
+                todos_dias[clave] = "\\day{" + fiesta + "}{\\vspace{1.75cm}" + este_dia + "}\n"
+                continue
             if not resultado.empty:
                 info_list = resultado[['titulo', 'opciones']].values.flatten().tolist()
                 for titulo, opciones in zip(info_list[::2], info_list[1::2]):
