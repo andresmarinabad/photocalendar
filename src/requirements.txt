@@ -1,2 +1,2 @@
 ephem==4.2
-streamlit==1.43.1
+streamlit==1.50.0
