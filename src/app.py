@@ -96,7 +96,7 @@ if not df.empty:
 
 gen_pdf = st.button("Crear Calendario", type="primary")
 if gen_pdf:
-    with st.spinner("Exportando a pdf...", show_time=True):
+    with st.spinner("Exportando a pdf..."):
         if df.empty:
             meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
                              'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
