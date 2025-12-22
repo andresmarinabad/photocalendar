@@ -70,6 +70,8 @@ def calcular_eventos_calendario():
     pilar = datetime.date(año, 10, 12)
     asuncion = datetime.date(año, 8, 15)
 
+    # SANTOS
+
     # Agregar eventos al diccionario
     obtener_fecha_diccionario(ramos, "{\\color{red} Ramos}", eventos)
     obtener_fecha_diccionario(pascua, "{\\color{red} Pascua}", eventos)

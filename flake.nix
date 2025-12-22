@@ -36,9 +36,9 @@
         
         # Opcional: Un mensaje de bienvenida y las instrucciones
         shellHook = ''
-          echo "✅ Entorno de desarrollo listo. Streamlit y Ephem instalados."
+          echo "✅ Entorno de desarrollo listo."
           echo "Para ejecutar la app: streamlit run src/app.py"
-          echo "Para salir: exit"
+          echo "Para salir: Ctrl+D"
         '';
       };
     };
