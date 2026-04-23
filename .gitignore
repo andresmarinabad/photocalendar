@@ -1,4 +1,5 @@
 .env/
+.venv/
 
 build/*.aux
 build/*.pdf
@@ -7,3 +8,4 @@ build/*.log
 __pycache__/
 .idea/
 
+.direnv/

@@ -12,7 +12,7 @@ class Config:
         )
         self.DB_PATH = os.path.join(self.ROOT, 'data', 'data.db')
         self.CSV_FOLDER = os.path.join(self.ROOT, 'input')
-        self.YEAR = os.getenv("YEAR", datetime.now().year+1)
+        self.YEAR = int(os.getenv("YEAR", str(datetime.now().year + 1)))
 
 
 config = Config()

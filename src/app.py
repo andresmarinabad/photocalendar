@@ -1,8 +1,9 @@
 import os
 import streamlit as st
 import pandas as pd
+from config import config
 from datos import load_csv_data, load_all_days, export_data_csv
-from utils import create_calendar_tex, compile_pdf
+from utils import create_calendar_tex, compile_pdf, max_dia_mes
 from database import (get_tables,
                       load_data,
                       delete_records,
@@ -109,22 +110,28 @@ if gen_pdf:
 # === FORMULARIO PARA AGREGAR NUEVOS REGISTROS ===
 st.sidebar.header("➕ Agregar datos")
 
+MESES_OPCIONES = [
+    "enero", "febrero", "marzo", "abril", "mayo", "junio",
+    "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
+]
+
 with st.sidebar.form(key="form_registro"):
-    dia = st.number_input("Día", min_value=1, max_value=31, step=1)
+    mes = st.selectbox("Mes", MESES_OPCIONES)
+    max_dia = max_dia_mes(mes, config.YEAR)
+    dia = st.number_input("Día", min_value=1, max_value=max_dia, step=1)
     titulo = st.text_input("Título")
     opciones = st.text_area("Opciones")
-    mes = st.selectbox("Mes", [
-        "enero", "febrero", "marzo", "abril", "mayo", "junio",
-        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
-    ])
     
     submit_button = st.form_submit_button("Guardar")
 
 if submit_button:
     if titulo and opciones:
-        insert_data(tabla_seleccionada, dia, titulo, opciones, mes)
-        st.sidebar.success(f"✅ Registro guardado en {tabla_seleccionada}.")
-        st.rerun()  # Recargar la app para actualizar los datos
+        try:
+            insert_data(tabla_seleccionada, dia, titulo, opciones, mes)
+            st.sidebar.success(f"✅ Registro guardado en {tabla_seleccionada}.")
+            st.rerun()
+        except ValueError as e:
+            st.sidebar.error(str(e))
     else:
         st.sidebar.error("⚠️ Título y Opciones son obligatorios.")
 

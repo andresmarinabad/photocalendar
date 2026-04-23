@@ -1,5 +1,6 @@
 import sqlite3
 from config import config
+from utils import max_dia_mes
 
 
 def create_table(table_name):
@@ -62,6 +63,10 @@ def load_data(table_name, pd):
 
 def insert_data(table_name, dia, titulo, opciones, mes):
     """Inserta un nuevo registro en la tabla seleccionada."""
+    limite = max_dia_mes(mes, config.YEAR)
+    if dia < 1 or dia > limite:
+        raise ValueError(f"Día {dia} inválido para {mes} en {config.YEAR} (1–{limite}).")
+
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute(f"""

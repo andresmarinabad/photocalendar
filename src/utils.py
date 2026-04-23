@@ -14,6 +14,14 @@ MESES = {
     9: "septiembre", 10: "octubre", 11: "noviembre", 12: "diciembre"
 }
 
+MES_A_NUM = {nombre: num for num, nombre in MESES.items()}
+
+
+def max_dia_mes(mes_nombre, anio):
+    """Último día válido del mes (28–31) según el año (febrero bisiesto)."""
+    mes_num = MES_A_NUM[mes_nombre]
+    return calendar.monthrange(anio, mes_num)[1]
+
 def obtener_fecha_diccionario(fecha, nombre_evento, eventos):
     """Añade un evento al diccionario en el formato requerido."""
     mes = MESES[fecha.month]
@@ -50,10 +58,17 @@ def calcular_eventos_calendario():
     otoño = ephem.localtime(ephem.next_autumnal_equinox(str(año)))
     invierno = ephem.localtime(ephem.next_winter_solstice(str(año)))
 
-    # Primer Domingo de Adviento (cuarto domingo antes de Navidad)
-    primer_domingo_adviento = max(
-        datetime.date(año, 11, d) for d in range(27, 31) if datetime.date(año, 11, d).weekday() == 6
-    )
+    # Primer domingo de Adviento: el único domingo entre el 27 de noviembre
+    # y el 3 de diciembre (inclusive). Antes solo se miraba noviembre y se
+    # perdía Adviento I en años en que cae en diciembre.
+    primer_domingo_adviento = None
+    for month, day in ((11, 27), (11, 28), (11, 29), (11, 30), (12, 1), (12, 2), (12, 3)):
+        dt = datetime.date(año, month, day)
+        if dt.weekday() == 6:
+            primer_domingo_adviento = dt
+            break
+    if primer_domingo_adviento is None:
+        raise RuntimeError(f"No se encontró domingo de Adviento para el año {año}")
 
     epifania = datetime.date(año, 1, 6)
     uno_enero = datetime.date(año, 1, 1)
@@ -104,25 +119,11 @@ def calcular_eventos_calendario():
 
     return eventos
 
-def calcula_num_semanas(anio, mes):
-
+def celdas_mes_calendario(anio, mes):
+    """Número de celdas (semanas × 7) para un mes en rejilla lun–dom (como calendar.monthrange)."""
     primer_dia, num_dias = calendar.monthrange(anio, mes)
-    primera_semana = (1 + primer_dia) // 7 
-    ultima_semana = (num_dias + primer_dia) // 7 
-    ultimo_dia_semana = (primer_dia + num_dias - 1) % 7
-    semanas = ultima_semana - primera_semana + 1
-    if ultimo_dia_semana == 6:
-        semanas -= 1
-    
-    return semanas
-
-def es_bisiesto(year):
-    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
-
-
-def dias_en_mes(mes):
-    mes_num = next((k for k, v in MESES.items() if v == mes), None)
-    return calendar.monthrange(config.YEAR, mes_num)[1]
+    semanas = (primer_dia + num_dias + 6) // 7
+    return semanas * 7
 
 
 def consultar_leyenda(titulo, opciones):
@@ -188,8 +189,7 @@ def create_calendar_tex(days):
             
             c.write("\\setcounter{calendardate}{"+str(counter)+"}\n")
             to_write = "\\BlankDay\n"
-            max_range = calcula_num_semanas(config.YEAR, mes) * 7
-            max_range = max_range if primer_dia != 6 else max_range + 7
+            max_range = celdas_mes_calendario(config.YEAR, mes)
             for day in range(0, max_range):
                 if counter < 1 or counter > count_days:
                     to_write = "\\BlankDay\n"

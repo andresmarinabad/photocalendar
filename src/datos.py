@@ -1,5 +1,6 @@
 import os
 import glob
+import calendar
 from config import config
 from database import (get_connection,
                       create_table,
@@ -43,10 +44,11 @@ def load_csv_data(pd, st):
 def load_all_days(df):
     todos_dias = {}
     eventos = calcular_eventos_calendario()
-    for mes in range(1, 13):
-        mes = MESES[mes]
+    for mes_num in range(1, 13):
+        mes = MESES[mes_num]
         grupo = df[df['mes'] == mes]
-        for dia in range(1, 32):
+        _, ndias = calendar.monthrange(config.YEAR, mes_num)
+        for dia in range(1, ndias + 1):
             fiesta = ''
             clave = f'{mes}{dia}'
             este_dia = ''
