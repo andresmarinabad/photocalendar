@@ -1,11 +1,12 @@
 [project]
 name = "photocalendar"
-version = "0.1.0"
-description = "Calendario fotográfico con Streamlit y LaTeX"
+version = "2.0.0"
+description = "Calendario fotográfico — FastAPI + React + LaTeX"
 requires-python = ">=3.12"
 dependencies = [
-    "streamlit>=1.28",
-    "pandas>=2.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "python-multipart>=0.0.20",
     "ephem>=4.1",
     "python-dateutil>=2.8",
 ]

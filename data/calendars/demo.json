@@ -1,0 +1,335 @@
+{
+  "name": "demo",
+  "year": 2027,
+  "events": [
+    {
+      "id": "e5b8cdce-3af7-4707-936f-a0b417ecda70",
+      "dia": 6,
+      "mes": "enero",
+      "titulo": "Reyes Magos",
+      "opciones": "santo"
+    },
+    {
+      "id": "3612fc9d-f26e-4573-88d5-1845ee38f435",
+      "dia": 12,
+      "mes": "enero",
+      "titulo": "Luisa Fernández",
+      "opciones": "1972"
+    },
+    {
+      "id": "21ef1406-c8c9-4cda-a0ae-7b320455cf79",
+      "dia": 20,
+      "mes": "enero",
+      "titulo": "Carlos Romero",
+      "opciones": "1985"
+    },
+    {
+      "id": "0bb34356-486f-45c8-83c5-0b3c6e2676e9",
+      "dia": 28,
+      "mes": "enero",
+      "titulo": "\\Cross Abuelo Roque",
+      "opciones": "cumple"
+    },
+    {
+      "id": "1f2a5814-f13b-49d4-b5c4-7188a331ef37",
+      "dia": 5,
+      "mes": "febrero",
+      "titulo": "Antonio Gómez",
+      "opciones": "1990"
+    },
+    {
+      "id": "4848ce11-d5ae-4e53-a28e-898b73588864",
+      "dia": 14,
+      "mes": "febrero",
+      "titulo": "San Valentín",
+      "opciones": "santo"
+    },
+    {
+      "id": "0a721a2f-c776-4700-a6b5-4dd939657cb7",
+      "dia": 21,
+      "mes": "febrero",
+      "titulo": "Elena y Carlos (boda)",
+      "opciones": "2015"
+    },
+    {
+      "id": "e1594fc8-6bfd-49f6-99b0-a857b790aab4",
+      "dia": 8,
+      "mes": "marzo",
+      "titulo": "Día de la Mujer",
+      "opciones": "santo"
+    },
+    {
+      "id": "ceb917af-c349-4e00-9440-6b5bb4d2506b",
+      "dia": 19,
+      "mes": "marzo",
+      "titulo": "San José",
+      "opciones": "santo"
+    },
+    {
+      "id": "df0a7572-539a-4b5a-9496-e42a347579e9",
+      "dia": 25,
+      "mes": "marzo",
+      "titulo": "Marta Fernández",
+      "opciones": "2016"
+    },
+    {
+      "id": "a00a857e-f627-46ed-89b3-2ebbee5cb964",
+      "dia": 31,
+      "mes": "marzo",
+      "titulo": "Javier Romero",
+      "opciones": "1979"
+    },
+    {
+      "id": "d3c0342a-b010-4553-8486-641e975e12ad",
+      "dia": 23,
+      "mes": "abril",
+      "titulo": "Sant Jordi",
+      "opciones": "santo"
+    },
+    {
+      "id": "a2d3cf2c-c1a3-4a6e-b955-e06c37f10ea7",
+      "dia": 26,
+      "mes": "abril",
+      "titulo": "Isabel Gómez",
+      "opciones": "1998"
+    },
+    {
+      "id": "c6163967-6b28-4f48-8955-58a430eeff46",
+      "dia": 29,
+      "mes": "abril",
+      "titulo": "Santa Catalina",
+      "opciones": "santo"
+    },
+    {
+      "id": "1fb33758-2d31-42af-bff0-8cedf7bff385",
+      "dia": 1,
+      "mes": "mayo",
+      "titulo": "Día del Trabajo",
+      "opciones": "santo"
+    },
+    {
+      "id": "362c02a4-9c4c-4418-9375-3075a7b9bdba",
+      "dia": 10,
+      "mes": "mayo",
+      "titulo": "Sofía Romero",
+      "opciones": "2020"
+    },
+    {
+      "id": "03f8f29f-df42-4e68-9a3a-61895ab78102",
+      "dia": 17,
+      "mes": "mayo",
+      "titulo": "\\Cross Tía Rosario",
+      "opciones": "cumple"
+    },
+    {
+      "id": "ee840b1b-d1a0-4707-aa98-14d7be9fb522",
+      "dia": 23,
+      "mes": "mayo",
+      "titulo": "Luis y Ana (boda)",
+      "opciones": "2019"
+    },
+    {
+      "id": "96efa248-374e-4569-b231-338b191d271c",
+      "dia": 29,
+      "mes": "mayo",
+      "titulo": "Pablo Fernández",
+      "opciones": "1994"
+    },
+    {
+      "id": "1466f5ca-de10-4e51-b625-b7cae0bfac67",
+      "dia": 1,
+      "mes": "junio",
+      "titulo": "Ignasi i Ester (boda)",
+      "opciones": "2018"
+    },
+    {
+      "id": "230c5fac-baf2-4906-bd10-39f8a50a3b2d",
+      "dia": 15,
+      "mes": "junio",
+      "titulo": "Antonio Romero",
+      "opciones": "1957"
+    },
+    {
+      "id": "47484366-96c6-4ca2-b9d9-700a0926ef86",
+      "dia": 24,
+      "mes": "junio",
+      "titulo": "San Juan",
+      "opciones": "santo"
+    },
+    {
+      "id": "fad07883-9680-4d61-bf86-eb76156abf28",
+      "dia": 29,
+      "mes": "junio",
+      "titulo": "Santos Pedro y Pablo",
+      "opciones": "santo"
+    },
+    {
+      "id": "c72acef0-30bf-4c8a-9b46-5558a3d14dd5",
+      "dia": 8,
+      "mes": "julio",
+      "titulo": "Carmen Gómez",
+      "opciones": "1963"
+    },
+    {
+      "id": "bb208bdd-63cc-4be7-9a81-23caf6fd1066",
+      "dia": 16,
+      "mes": "julio",
+      "titulo": "Nuestra Señora del Carmen",
+      "opciones": "santo"
+    },
+    {
+      "id": "a4d75a26-8e95-4bd0-a046-ee8c79879902",
+      "dia": 25,
+      "mes": "julio",
+      "titulo": "Santiago Apóstol",
+      "opciones": "santo"
+    },
+    {
+      "id": "ff6cb787-caea-458c-b510-221f2aeb61cd",
+      "dia": 28,
+      "mes": "julio",
+      "titulo": "Nicolás Fernández",
+      "opciones": "2017"
+    },
+    {
+      "id": "1d2982cf-1a3b-4b3d-907d-d64b7c5d49ef",
+      "dia": 5,
+      "mes": "agosto",
+      "titulo": "Teresa Romero",
+      "opciones": "2022"
+    },
+    {
+      "id": "daeb6931-342d-4828-8ab6-9659b917de5f",
+      "dia": 15,
+      "mes": "agosto",
+      "titulo": "La Asunción",
+      "opciones": "santo"
+    },
+    {
+      "id": "ade6863d-f7d5-4bfb-bf5f-52b90bdf0fc2",
+      "dia": 22,
+      "mes": "agosto",
+      "titulo": "Roberto Gómez",
+      "opciones": "1988"
+    },
+    {
+      "id": "58890d74-6896-4f4b-925d-26c7a4e71014",
+      "dia": 28,
+      "mes": "agosto",
+      "titulo": "Marina Fernández",
+      "opciones": "1975"
+    },
+    {
+      "id": "394f0b29-fa1b-4c8f-9975-123973b7cce0",
+      "dia": 4,
+      "mes": "septiembre",
+      "titulo": "Joan y Marta (boda)",
+      "opciones": "2020"
+    },
+    {
+      "id": "e803d7ff-4d65-4cdb-b20a-6c078e73910e",
+      "dia": 12,
+      "mes": "septiembre",
+      "titulo": "Dulce Nombre de María",
+      "opciones": "santo"
+    },
+    {
+      "id": "ec44aa50-dc44-4fb2-951a-647cbf068487",
+      "dia": 21,
+      "mes": "septiembre",
+      "titulo": "San Mateo",
+      "opciones": "santo"
+    },
+    {
+      "id": "395d4aa9-2ac3-4a92-8c0a-2069a066f709",
+      "dia": 25,
+      "mes": "septiembre",
+      "titulo": "\\Cross Abuela Concha",
+      "opciones": "1938"
+    },
+    {
+      "id": "1382e193-4391-486f-8b65-71f265787831",
+      "dia": 3,
+      "mes": "octubre",
+      "titulo": "Ana Romero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "1b6f0088-3fb4-4577-a9c2-14a6aff3bbca",
+      "dia": 12,
+      "mes": "octubre",
+      "titulo": "Nuestra Señora del Pilar",
+      "opciones": "santo"
+    },
+    {
+      "id": "ba722e55-53e1-4e2d-af3d-f47226187b55",
+      "dia": 18,
+      "mes": "octubre",
+      "titulo": "San Lucas",
+      "opciones": "santo"
+    },
+    {
+      "id": "19f487f5-9bbb-48d8-9dbc-6468d936e420",
+      "dia": 26,
+      "mes": "octubre",
+      "titulo": "Diego Gómez",
+      "opciones": "2009"
+    },
+    {
+      "id": "502bde8e-de80-464a-9788-34a94a59b7e3",
+      "dia": 1,
+      "mes": "noviembre",
+      "titulo": "Todos los Santos",
+      "opciones": "santo"
+    },
+    {
+      "id": "60b6a4da-7c6e-421d-a7c8-596329b2da75",
+      "dia": 8,
+      "mes": "noviembre",
+      "titulo": "Sara Fernández",
+      "opciones": "1991"
+    },
+    {
+      "id": "8b155bfc-c056-411f-9015-998d02769404",
+      "dia": 22,
+      "mes": "noviembre",
+      "titulo": "\\Cross Abuelo Manuel",
+      "opciones": "cumple"
+    },
+    {
+      "id": "3e38c662-7e63-49c9-9888-07c45b0ee9f7",
+      "dia": 27,
+      "mes": "noviembre",
+      "titulo": "San Andrés",
+      "opciones": "santo"
+    },
+    {
+      "id": "9b33183a-71ba-443e-ab40-1c77ea69add1",
+      "dia": 3,
+      "mes": "diciembre",
+      "titulo": "San Francisco Javier",
+      "opciones": "santo"
+    },
+    {
+      "id": "590a3610-d08d-48f7-98f3-b9f03a67668b",
+      "dia": 8,
+      "mes": "diciembre",
+      "titulo": "La Inmaculada",
+      "opciones": "santo"
+    },
+    {
+      "id": "5aa5eb26-5809-43f7-b7ec-8cbf9716617a",
+      "dia": 18,
+      "mes": "diciembre",
+      "titulo": "Lucía Romero",
+      "opciones": "2018"
+    },
+    {
+      "id": "cefd6796-f6cb-4784-9f80-97256a196bdc",
+      "dia": 25,
+      "mes": "diciembre",
+      "titulo": "Navidad",
+      "opciones": "santo"
+    }
+  ]
+}

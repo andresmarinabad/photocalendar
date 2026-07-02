@@ -1,0 +1,881 @@
+{
+  "name": "marin_codina",
+  "year": 2027,
+  "events": [
+    {
+      "id": "b396cfba-ffd7-4aa7-884d-abe2f44b17a1",
+      "dia": 10,
+      "mes": "abril",
+      "titulo": "\\Cross Bisabuelo Andrés",
+      "opciones": "cumple"
+    },
+    {
+      "id": "45694c69-14c4-4ec3-988b-e7a4c349998d",
+      "dia": 14,
+      "mes": "abril",
+      "titulo": "Míriam",
+      "opciones": "2024"
+    },
+    {
+      "id": "bb4024f2-9710-46a1-b2d5-acca322bb9cb",
+      "dia": 10,
+      "mes": "abril",
+      "titulo": "Guillermo Condal",
+      "opciones": "cumple"
+    },
+    {
+      "id": "50a80c29-1f69-4ae1-b677-e4a27bf45530",
+      "dia": 27,
+      "mes": "abril",
+      "titulo": "Mare de Deu de Montserrat",
+      "opciones": "santo"
+    },
+    {
+      "id": "18f3e3ec-4b15-4617-9fbb-f47acf23e47d",
+      "dia": 25,
+      "mes": "abril",
+      "titulo": "Sant Marc",
+      "opciones": "santo"
+    },
+    {
+      "id": "3d1be876-66e6-42ac-9639-4bcdc4a44a31",
+      "dia": 24,
+      "mes": "abril",
+      "titulo": "Amalia Schattner",
+      "opciones": "cumple"
+    },
+    {
+      "id": "c911f28a-a3be-47fe-a7de-e81336784956",
+      "dia": 23,
+      "mes": "abril",
+      "titulo": "Sant Jordi",
+      "opciones": "santo"
+    },
+    {
+      "id": "8fd1106c-7a10-4fec-956d-c1ae4ad7cf28",
+      "dia": 29,
+      "mes": "abril",
+      "titulo": "Santa Catalina",
+      "opciones": "santo"
+    },
+    {
+      "id": "8c9d3075-85dc-4e4d-9b58-9cf2d628626f",
+      "dia": 21,
+      "mes": "abril",
+      "titulo": "Marcos y Teresa",
+      "opciones": "2017"
+    },
+    {
+      "id": "f021ed72-aea0-4cb1-8421-645e8f6f8fc9",
+      "dia": 30,
+      "mes": "abril",
+      "titulo": "Marc i Núria",
+      "opciones": "2017"
+    },
+    {
+      "id": "41270f2a-06e0-40ee-8b82-c924159264b5",
+      "dia": 19,
+      "mes": "agosto",
+      "titulo": "Clara Condal",
+      "opciones": "cumple"
+    },
+    {
+      "id": "f89e151f-682a-48de-9e3d-5436a831c706",
+      "dia": 28,
+      "mes": "agosto",
+      "titulo": "Mateo",
+      "opciones": "2018"
+    },
+    {
+      "id": "4c34ada1-6050-40ec-87f0-e55ab17fa818",
+      "dia": 29,
+      "mes": "agosto",
+      "titulo": "Ana Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "918568b7-7873-4255-a336-5685746e570a",
+      "dia": 2,
+      "mes": "agosto",
+      "titulo": "Nuestra Señora de los ángeles",
+      "opciones": "santo"
+    },
+    {
+      "id": "bd661fb8-7b99-4590-b23c-057cbe02416e",
+      "dia": 7,
+      "mes": "agosto",
+      "titulo": "Clara Félix",
+      "opciones": "cumple"
+    },
+    {
+      "id": "351d3145-3a28-4499-a630-845888ec9a06",
+      "dia": 11,
+      "mes": "agosto",
+      "titulo": "Santa Clara",
+      "opciones": "santo"
+    },
+    {
+      "id": "c169fd72-b752-4c6b-bbc1-ade8d13b032c",
+      "dia": 12,
+      "mes": "agosto",
+      "titulo": "Miquel Codina",
+      "opciones": "1993"
+    },
+    {
+      "id": "59340d94-6f28-4507-b867-b223b41eb0b2",
+      "dia": 13,
+      "mes": "agosto",
+      "titulo": "J. Ignasi Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "0469d8dd-fe15-4131-bf7f-da00330254c8",
+      "dia": 15,
+      "mes": "agosto",
+      "titulo": "Angi",
+      "opciones": "1955"
+    },
+    {
+      "id": "8184c219-4ec6-47a8-811e-375c8986fde3",
+      "dia": 19,
+      "mes": "agosto",
+      "titulo": "Clara Condal",
+      "opciones": "cumple"
+    },
+    {
+      "id": "3467778c-4062-4a69-ba88-49173c4fb142",
+      "dia": 17,
+      "mes": "agosto",
+      "titulo": "Teresa Pons",
+      "opciones": "cumple"
+    },
+    {
+      "id": "2b48762b-25f7-4e73-971b-60cd01608ab8",
+      "dia": 14,
+      "mes": "diciembre",
+      "titulo": "Catalina",
+      "opciones": "2019"
+    },
+    {
+      "id": "525db8aa-3b2a-433e-a898-1ba9e4934c23",
+      "dia": 28,
+      "mes": "diciembre",
+      "titulo": "Ester",
+      "opciones": "1994"
+    },
+    {
+      "id": "726ed815-4b8f-4f57-8895-77ffef5e995b",
+      "dia": 30,
+      "mes": "diciembre",
+      "titulo": "Abuela",
+      "opciones": "1961"
+    },
+    {
+      "id": "75d33f80-2bba-48c1-9f7b-7245dbe73888",
+      "dia": 30,
+      "mes": "diciembre",
+      "titulo": "Marc Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "f26880ab-832b-48a0-a91f-a9573e69f532",
+      "dia": 3,
+      "mes": "diciembre",
+      "titulo": "San Fco Javier",
+      "opciones": "santo"
+    },
+    {
+      "id": "0ff920fe-0123-45e4-96a3-236054e7acc3",
+      "dia": 6,
+      "mes": "diciembre",
+      "titulo": "\\Cross Iaia Montse",
+      "opciones": "cumple"
+    },
+    {
+      "id": "38e84f91-7676-4e4a-b83d-249ed80822d6",
+      "dia": 8,
+      "mes": "diciembre",
+      "titulo": "\\Cross Abuela Teresa",
+      "opciones": "cumple"
+    },
+    {
+      "id": "cea50c68-34a4-498d-865d-83b51a3a77b0",
+      "dia": 10,
+      "mes": "diciembre",
+      "titulo": "Juan Codina",
+      "opciones": "2014"
+    },
+    {
+      "id": "621200fa-54f8-4e04-b120-3a684a8d9781",
+      "dia": 18,
+      "mes": "diciembre",
+      "titulo": "Javier Codina",
+      "opciones": "2015"
+    },
+    {
+      "id": "45cf47db-a165-4996-83bd-b619f6ab6f6b",
+      "dia": 26,
+      "mes": "diciembre",
+      "titulo": "Gloria Molina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "0076f036-c041-41b2-86d1-01bd20c8273e",
+      "dia": 28,
+      "mes": "diciembre",
+      "titulo": "Santos Inocentes",
+      "opciones": "santo"
+    },
+    {
+      "id": "fa0289d2-70e8-4bd9-898c-153053fa1ae4",
+      "dia": 6,
+      "mes": "enero",
+      "titulo": "Ordenación Pau",
+      "opciones": "2014"
+    },
+    {
+      "id": "d340338f-8346-446b-868e-e602130e1ed8",
+      "dia": 26,
+      "mes": "enero",
+      "titulo": "\\Cross  Tío Pepe",
+      "opciones": "2025"
+    },
+    {
+      "id": "c55c1dcb-74a5-4ba7-84bd-c248a3477aaa",
+      "dia": 12,
+      "mes": "enero",
+      "titulo": "\\Cross Montobbio",
+      "opciones": "cumple"
+    },
+    {
+      "id": "48808021-a51c-4d58-ae0b-c1d0e6f4c08d",
+      "dia": 28,
+      "mes": "enero",
+      "titulo": "\\Cross Ana Abad",
+      "opciones": "cumple"
+    },
+    {
+      "id": "0b896407-625a-48c5-a766-b34ad52259fc",
+      "dia": 21,
+      "mes": "enero",
+      "titulo": "Montse Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "5a5398c3-e54f-4ac0-a095-8fe638f94571",
+      "dia": 24,
+      "mes": "enero",
+      "titulo": "Ester Codina",
+      "opciones": "1993"
+    },
+    {
+      "id": "9d382eb8-9fbd-4e6b-af25-f640635fafd9",
+      "dia": 25,
+      "mes": "enero",
+      "titulo": "María Codina",
+      "opciones": "1982"
+    },
+    {
+      "id": "9aa37976-260a-4a7a-b072-c85393bc11e5",
+      "dia": 26,
+      "mes": "febrero",
+      "titulo": "Álvaro Roca",
+      "opciones": "1989"
+    },
+    {
+      "id": "b6bb09c2-3379-4b8e-a38a-177381df2b20",
+      "dia": 9,
+      "mes": "febrero",
+      "titulo": "Tía Pili",
+      "opciones": "cumple"
+    },
+    {
+      "id": "1f22d53f-a119-4cb5-acce-0b2a480abff0",
+      "dia": 14,
+      "mes": "febrero",
+      "titulo": "Abuelo",
+      "opciones": "1961"
+    },
+    {
+      "id": "027d98e5-054f-4976-8adf-74d9255b6936",
+      "dia": 16,
+      "mes": "febrero",
+      "titulo": "Tía Maribel",
+      "opciones": "cumple"
+    },
+    {
+      "id": "31b3e81e-3047-4fae-b3bc-0c93ae12a355",
+      "dia": 9,
+      "mes": "febrero",
+      "titulo": "Xavi Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "a63386a6-f83f-466c-9f8a-8c0133a0c87a",
+      "dia": 12,
+      "mes": "febrero",
+      "titulo": "\\Cross Daniel Marín",
+      "opciones": "cumple"
+    },
+    {
+      "id": "e115f2e6-ed84-4748-85ab-0a796921b6c7",
+      "dia": 15,
+      "mes": "febrero",
+      "titulo": "Nilo Lletjós",
+      "opciones": "cumple"
+    },
+    {
+      "id": "9c3881ba-039d-4a5b-9d66-8271dfc63503",
+      "dia": 21,
+      "mes": "julio",
+      "titulo": "Pere Lluís",
+      "opciones": "1954"
+    },
+    {
+      "id": "bba4f641-4254-4b7b-bd10-f3598de4c20b",
+      "dia": 8,
+      "mes": "julio",
+      "titulo": "Andrés y Sara",
+      "opciones": "2016"
+    },
+    {
+      "id": "5e6bed86-f425-4703-a257-1aa4b16f93ea",
+      "dia": 1,
+      "mes": "julio",
+      "titulo": "Ignasi y Ester",
+      "opciones": "2018"
+    },
+    {
+      "id": "f4250d10-eb5d-4f20-b078-fec56c9a3b7f",
+      "dia": 9,
+      "mes": "julio",
+      "titulo": "Tomás Codina",
+      "opciones": "2021"
+    },
+    {
+      "id": "3024eff6-8e65-4902-b40b-df9f1213df92",
+      "dia": 10,
+      "mes": "julio",
+      "titulo": "Carlos Martín",
+      "opciones": "2022"
+    },
+    {
+      "id": "2b1080a6-780d-4639-97c2-b79a1e3a5b69",
+      "dia": 11,
+      "mes": "julio",
+      "titulo": "Abuelos",
+      "opciones": "1988"
+    },
+    {
+      "id": "f723dc48-8496-41cc-9038-82501a94103d",
+      "dia": 16,
+      "mes": "julio",
+      "titulo": "Nuestra Señora del Carmen",
+      "opciones": "santo"
+    },
+    {
+      "id": "7c4acd55-6f07-4797-ba0e-a494de5dbfde",
+      "dia": 19,
+      "mes": "julio",
+      "titulo": "Marc y Débora",
+      "opciones": "2014"
+    },
+    {
+      "id": "cafea715-1205-42f7-af10-d51b6b1b5071",
+      "dia": 25,
+      "mes": "julio",
+      "titulo": "Pilar Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "dfd02c31-15d0-4761-b8f9-de4f11dd1974",
+      "dia": 26,
+      "mes": "julio",
+      "titulo": "Santa Ana",
+      "opciones": "santo"
+    },
+    {
+      "id": "58e8ed33-177f-4229-babe-b55ff9fa02dd",
+      "dia": 27,
+      "mes": "julio",
+      "titulo": "Pau",
+      "opciones": "1986"
+    },
+    {
+      "id": "97018bf5-0193-4662-8766-5fccdf6de643",
+      "dia": 29,
+      "mes": "julio",
+      "titulo": "Santa Marta",
+      "opciones": "santo"
+    },
+    {
+      "id": "4956296c-5312-4dd9-897e-f657764783cf",
+      "dia": 30,
+      "mes": "julio",
+      "titulo": "\\Cross Tía Merche",
+      "opciones": "santo"
+    },
+    {
+      "id": "c3099817-518c-4ee9-9c46-aa3e44b67445",
+      "dia": 31,
+      "mes": "julio",
+      "titulo": "Sant Ignasi",
+      "opciones": "santo"
+    },
+    {
+      "id": "dd926ef5-d6e0-4883-90aa-cbd4e4cdcdce",
+      "dia": 2,
+      "mes": "junio",
+      "titulo": "Ángela Pons",
+      "opciones": "cumple"
+    },
+    {
+      "id": "f8106de6-9b54-4b2a-872c-0febe9a9f4b7",
+      "dia": 4,
+      "mes": "junio",
+      "titulo": "Iñaqui Mir",
+      "opciones": "cumple"
+    },
+    {
+      "id": "920bdf79-9e1c-44a3-8aa6-3e6f80c5bab8",
+      "dia": 9,
+      "mes": "junio",
+      "titulo": "Daniel Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "eeb6b0b6-955a-4339-afb2-6e567bb27a87",
+      "dia": 1,
+      "mes": "junio",
+      "titulo": "Miquel y Maria",
+      "opciones": "2018"
+    },
+    {
+      "id": "431c8881-b58e-46f2-8c8a-9cd871d723f8",
+      "dia": 3,
+      "mes": "junio",
+      "titulo": "\\Cross Joan Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "96743b4b-181f-4ae7-9b64-5f3fe04f116e",
+      "dia": 24,
+      "mes": "junio",
+      "titulo": "San Juan",
+      "opciones": "santo"
+    },
+    {
+      "id": "0d243d27-96c4-476f-8b2c-53c4c8c17388",
+      "dia": 28,
+      "mes": "junio",
+      "titulo": "Sofía Martín",
+      "opciones": "2021"
+    },
+    {
+      "id": "5b71909f-bdd1-40b7-a433-371295720ec3",
+      "dia": 29,
+      "mes": "junio",
+      "titulo": "Santos Pablo y Pedro",
+      "opciones": "santo"
+    },
+    {
+      "id": "bb4d3abf-70f8-4404-8100-d07f5858c96a",
+      "dia": 3,
+      "mes": "marzo",
+      "titulo": "Alejandro Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "416d3421-6adb-4f21-8d39-c233a5718261",
+      "dia": 4,
+      "mes": "marzo",
+      "titulo": "Maria F",
+      "opciones": "cumple"
+    },
+    {
+      "id": "87d79de0-4d48-45ac-8c67-8fc6e4c92cfb",
+      "dia": 19,
+      "mes": "marzo",
+      "titulo": "San José",
+      "opciones": "santo"
+    },
+    {
+      "id": "77f9deb8-46a9-49d2-9d8d-76882e82d51e",
+      "dia": 31,
+      "mes": "marzo",
+      "titulo": "Andrés",
+      "opciones": "1989"
+    },
+    {
+      "id": "e2410a05-571f-483d-9844-de3bc7b9677c",
+      "dia": 6,
+      "mes": "marzo",
+      "titulo": "Joan Martín",
+      "opciones": "cumple"
+    },
+    {
+      "id": "6b4b573c-c643-45ee-afbd-5f30f814bed6",
+      "dia": 16,
+      "mes": "marzo",
+      "titulo": "Alonso Mir",
+      "opciones": "cumple"
+    },
+    {
+      "id": "99b998cf-32ac-46a5-a29a-b8bed07bf013",
+      "dia": 31,
+      "mes": "marzo",
+      "titulo": "Beltrán Mir",
+      "opciones": "cumple"
+    },
+    {
+      "id": "d24a06da-4202-4e14-ae94-102b3d967a3d",
+      "dia": 29,
+      "mes": "marzo",
+      "titulo": "Jimena Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "eca51834-c537-4bbe-9223-4340471f9c0f",
+      "dia": 13,
+      "mes": "marzo",
+      "titulo": "San Rodrigo",
+      "opciones": "santo"
+    },
+    {
+      "id": "f14bd707-ed30-4cf4-baa7-40a5044e3371",
+      "dia": 21,
+      "mes": "marzo",
+      "titulo": "Xavier Codina",
+      "opciones": "cumple"
+    },
+    {
+      "id": "d76af4f2-f40b-4397-a2dc-62b9c4536dd1",
+      "dia": 21,
+      "mes": "marzo",
+      "titulo": "\\Cross Emilio Parra",
+      "opciones": "cumple"
+    },
+    {
+      "id": "e36d3666-ba0f-4161-b670-1f0b4ce90867",
+      "dia": 8,
+      "mes": "mayo",
+      "titulo": "Míriam Cusí",
+      "opciones": "1988"
+    },
+    {
+      "id": "75118b0d-5c86-44c5-90b0-4118d702925c",
+      "dia": 11,
+      "mes": "mayo",
+      "titulo": "Marta Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "ce79ab0f-d3e6-4f31-b191-ee68812e4c96",
+      "dia": 13,
+      "mes": "mayo",
+      "titulo": "Marcel Schattner",
+      "opciones": "cumple"
+    },
+    {
+      "id": "2f75ce3c-bad5-449b-b185-017ac16c570b",
+      "dia": 29,
+      "mes": "mayo",
+      "titulo": "Nacho Estall",
+      "opciones": "cumple"
+    },
+    {
+      "id": "d30628df-ebca-474f-bcf2-738faebc8e0e",
+      "dia": 11,
+      "mes": "mayo",
+      "titulo": "Marta Cubero",
+      "opciones": "cumple"
+    },
+    {
+      "id": "14fa257f-df0c-4c9f-ad3d-858e3b10f9d3",
+      "dia": 18,
+      "mes": "mayo",
+      "titulo": "Clara Codina",
+      "opciones": "2019"
+    },
+    {
+      "id": "3fa7a30f-c6d8-47fa-9ef8-bd315f1c546b",
+      "dia": 19,
+      "mes": "mayo",
+      "titulo": "Raquel Codina",
+      "opciones": "2021"
+    },
+    {
+      "id": "420633b2-0006-43b7-b496-7b3fe1f55017",
+      "dia": 31,
+      "mes": "mayo",
+      "titulo": "Andreu Codina",
+      "opciones": "2024"
+    },
+    {
+      "id": "9ad6d66c-d911-4790-ab25-49cab34d9c3f",
+      "dia": 26,
+      "mes": "mayo",
+      "titulo": "Pilarín",
+      "opciones": "cumple"
+    },
+    {
+      "id": "396f6630-bb41-4575-b084-7f8d2edb8a40",
+      "dia": 8,
+      "mes": "noviembre",
+      "titulo": "Sara",
+      "opciones": "1988"
+    },
+    {
+      "id": "35022246-c81a-42d7-b4b9-926ab05812b8",
+      "dia": 13,
+      "mes": "noviembre",
+      "titulo": "Tío Pablo",
+      "opciones": "1991"
+    },
+    {
+      "id": "82be1251-e04c-4318-85ae-692b163e962d",
+      "dia": 22,
+      "mes": "noviembre",
+      "titulo": "\\Cross Abuelo Ángel",
+      "opciones": "cumple"
+    },
+    {
+      "id": "c5a47c43-06a7-41ac-9de4-ad7824615da9",
+      "dia": 24,
+      "mes": "noviembre",
+      "titulo": "\\Cross Iaia Sara",
+      "opciones": "cumple"
+    },
+    {
+      "id": "ab507a81-95cb-4b37-b314-7b6fc2b5d8f3",
+      "dia": 27,
+      "mes": "noviembre",
+      "titulo": "Débora Martínez",
+      "opciones": "1991"
+    },
+    {
+      "id": "9b361c80-ff18-48c7-8218-0346cfc2b876",
+      "dia": 27,
+      "mes": "noviembre",
+      "titulo": "San Andrés",
+      "opciones": "santo"
+    },
+    {
+      "id": "84cf1ef6-67d9-4583-8ebd-3483c7cdc186",
+      "dia": 1,
+      "mes": "octubre",
+      "titulo": "Álvaro y Míriam",
+      "opciones": "2016"
+    },
+    {
+      "id": "25a9fa06-4f01-4a7d-b820-79d87d33be76",
+      "dia": 8,
+      "mes": "octubre",
+      "titulo": "Teresa Esteve",
+      "opciones": "cumple"
+    },
+    {
+      "id": "1ccf144a-480e-4359-8aa2-649ab6535730",
+      "dia": 11,
+      "mes": "octubre",
+      "titulo": "Manuel Pons",
+      "opciones": "cumple"
+    },
+    {
+      "id": "a41896b1-822e-4d6a-82df-c46eeb639973",
+      "dia": 24,
+      "mes": "octubre",
+      "titulo": "Ignasi Codina",
+      "opciones": "1991"
+    },
+    {
+      "id": "e2ed5a01-dceb-42dd-8d05-3e6fd79b5617",
+      "dia": 3,
+      "mes": "octubre",
+      "titulo": "Anna Prat",
+      "opciones": "cumple"
+    },
+    {
+      "id": "ef5e9de2-1850-4d4c-a4cf-086193ae5689",
+      "dia": 6,
+      "mes": "octubre",
+      "titulo": "Felip Barba",
+      "opciones": "cumple"
+    },
+    {
+      "id": "e011b56e-589c-4ec9-baa3-a677e9683ba8",
+      "dia": 7,
+      "mes": "octubre",
+      "titulo": "María Condal",
+      "opciones": "cumple"
+    },
+    {
+      "id": "f63eb066-ac66-4313-94b4-3657e947ade5",
+      "dia": 8,
+      "mes": "octubre",
+      "titulo": "Teresa Esteve",
+      "opciones": "1992"
+    },
+    {
+      "id": "6d83e42a-9b66-4f47-bd7d-9dc7367c28d0",
+      "dia": 9,
+      "mes": "octubre",
+      "titulo": "Santa Sara",
+      "opciones": "santo"
+    },
+    {
+      "id": "7b940ff1-ec16-4a8b-acac-be45cb89f301",
+      "dia": 10,
+      "mes": "octubre",
+      "titulo": "Lucas Codina",
+      "opciones": "2018"
+    },
+    {
+      "id": "2ad2b097-e166-422c-b63d-0fcc45aa7139",
+      "dia": 15,
+      "mes": "octubre",
+      "titulo": "Santa Teresa",
+      "opciones": "santo"
+    },
+    {
+      "id": "325212b9-1e6f-4516-8f3e-2c156ba3eb51",
+      "dia": 15,
+      "mes": "octubre",
+      "titulo": "Gonzalo Schattner",
+      "opciones": "cumple"
+    },
+    {
+      "id": "37bdca8b-0c17-4e05-b36a-200af7c325ce",
+      "dia": 18,
+      "mes": "octubre",
+      "titulo": "San Lucas",
+      "opciones": "santo"
+    },
+    {
+      "id": "b675fa4b-2b92-4f3b-a8c5-1edd06da24b8",
+      "dia": 26,
+      "mes": "octubre",
+      "titulo": "Eva Ciriquián",
+      "opciones": "cumple"
+    },
+    {
+      "id": "26f1750c-9b4e-4985-ba7e-367d13e8c97e",
+      "dia": 28,
+      "mes": "octubre",
+      "titulo": "\\Cross Abuelita Merche",
+      "opciones": "cumple"
+    },
+    {
+      "id": "5b2377ef-aaa9-44ac-9cc4-4bab43315097",
+      "dia": 28,
+      "mes": "octubre",
+      "titulo": "Nicolás Schattner",
+      "opciones": "cumple"
+    },
+    {
+      "id": "628edd46-818d-44b6-87fa-fe3f8da306dd",
+      "dia": 2,
+      "mes": "septiembre",
+      "titulo": "Bea Peral",
+      "opciones": "1989"
+    },
+    {
+      "id": "31709d42-03b5-4c0b-bd51-a7a6dcdede7b",
+      "dia": 2,
+      "mes": "septiembre",
+      "titulo": "Marcos Manén",
+      "opciones": "1991"
+    },
+    {
+      "id": "0fc80fd5-a748-4537-8ccd-c87fc550af19",
+      "dia": 17,
+      "mes": "septiembre",
+      "titulo": "Paula",
+      "opciones": "2022"
+    },
+    {
+      "id": "5d68ea21-b2e0-4419-9f2b-091d614b72a2",
+      "dia": 18,
+      "mes": "septiembre",
+      "titulo": "\\Cross Gabriel",
+      "opciones": "2016"
+    },
+    {
+      "id": "a4203ff3-d255-4d12-80c2-2d7ebb958d81",
+      "dia": 18,
+      "mes": "septiembre",
+      "titulo": "Javier Rebled",
+      "opciones": "cumple"
+    },
+    {
+      "id": "2ae61c54-241f-459a-b057-d947b5f5f58a",
+      "dia": 25,
+      "mes": "septiembre",
+      "titulo": "Marta",
+      "opciones": "2017"
+    },
+    {
+      "id": "97539df9-ee6c-427e-a275-8dd29445b25a",
+      "dia": 4,
+      "mes": "septiembre",
+      "titulo": "Joan y Ester",
+      "opciones": "2020"
+    },
+    {
+      "id": "6e46ebe2-a49b-4f8e-98eb-956f072e7b10",
+      "dia": 12,
+      "mes": "septiembre",
+      "titulo": "Tía Tere",
+      "opciones": "cumple"
+    },
+    {
+      "id": "409c8251-cd25-48c6-811a-ca0de3d9de68",
+      "dia": 12,
+      "mes": "septiembre",
+      "titulo": "Dulce nombre de María",
+      "opciones": "santo"
+    },
+    {
+      "id": "b6aba638-01c3-44db-9855-a9ef43e74f6b",
+      "dia": 14,
+      "mes": "septiembre",
+      "titulo": "\\Cross Raquel Marín",
+      "opciones": "cumple"
+    },
+    {
+      "id": "01e4983d-447a-4fd5-999e-6c281a22b4dd",
+      "dia": 18,
+      "mes": "septiembre",
+      "titulo": "Xavi y Marta",
+      "opciones": "2021"
+    },
+    {
+      "id": "f4aec5c6-4c78-42fc-b653-856707b31962",
+      "dia": 21,
+      "mes": "septiembre",
+      "titulo": "San Mateo",
+      "opciones": "santo"
+    },
+    {
+      "id": "d51f6443-3fba-4631-8745-c09bc32738f7",
+      "dia": 24,
+      "mes": "septiembre",
+      "titulo": "La Mercè",
+      "opciones": "santo"
+    },
+    {
+      "id": "cfd6240b-699f-43d3-b2ba-ed696bc7b17d",
+      "dia": 29,
+      "mes": "septiembre",
+      "titulo": "San Miguel",
+      "opciones": "santo"
+    },
+    {
+      "id": "ee9e55bb-ebc6-464a-9d40-c979324e0aad",
+      "dia": 28,
+      "mes": "junio",
+      "titulo": "Joan jr",
+      "opciones": "2026"
+    }
+  ]
+}
