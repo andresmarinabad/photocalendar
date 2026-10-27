@@ -52,13 +52,6 @@
       "opciones": "santo"
     },
     {
-      "id": "978ca21e-b483-4654-b4da-f27b7f153d88",
-      "dia": 19,
-      "mes": "agosto",
-      "titulo": "Clara Condal",
-      "opciones": "cumple"
-    },
-    {
       "id": "44987f4f-18fd-4c58-b984-3eb9710be40f",
       "dia": 28,
       "mes": "agosto",
@@ -336,13 +329,6 @@
       "dia": 29,
       "mes": "mayo",
       "titulo": "Nacho Estall",
-      "opciones": "cumple"
-    },
-    {
-      "id": "28a9575c-9ed4-4aa8-8b0b-5a280f485d39",
-      "dia": 11,
-      "mes": "mayo",
-      "titulo": "Marta Cubero",
       "opciones": "cumple"
     },
     {
