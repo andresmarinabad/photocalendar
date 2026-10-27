@@ -36,7 +36,7 @@ Aplicación web para gestionar un **calendario fotográfico personalizado**: añ
 
 ## Requisitos
 
-- [Nix](https://nixos.org/) con flakes habilitados — el entorno `flake.nix` provee **uv**, **Node.js 22** y **TeX Live completo** sin instalar nada más a mano
+- [Nix](https://nixos.org/) con flakes habilitados — el entorno `flake.nix` provee **uv**, **Node.js 22** y **TeX Live básico con los paquetes del calendario**, sin descargar la distribución completa ni instalar nada más a mano
 - Opcional: [direnv](https://direnv.net/) + [nix-direnv](https://github.com/nix-community/nix-direnv) — con `.envrc` el entorno se activa solo al entrar a la carpeta
 
 ---

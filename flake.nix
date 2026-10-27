@@ -9,12 +9,26 @@
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
+      calendarTex = pkgs.texlive.combine {
+        inherit (pkgs.texlive)
+          scheme-basic
+          xcolor
+          clock
+          ifsym
+          graphics # graphicx
+          marvosym
+          geometry
+          psnfss # palatino.sty
+          palatino # Palatino font files
+          tools # tabularx, used by build/calendar.sty
+          mwe; # example-image fallback for months without a photo
+      };
     in {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
           uv
           nodejs_22
-          texlive.combined.scheme-full
+          calendarTex
           stdenv.cc.cc.lib
           zlib
         ];
